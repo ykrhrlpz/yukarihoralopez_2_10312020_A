@@ -1,5 +1,50 @@
 html
 {
     font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
+    color: #131516;
+    /* text-align: center; */
 }
 
+.navBar
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: blueviolet;
+    padding: 0.3rem;
+    margin: -8px;
+    min-height: 3rem;
+}
+
+.navLogo
+{
+    background-color: crimson;
+}
+
+.navMenu
+{
+    margin: 1rem;
+}
+
+nav a
+{
+    text-decoration: none;
+    font-weight: 200;
+    color: #131516;
+}
+
+.navMenuItem
+{
+    display: inline-block;
+    padding: 0 1rem;
+    background-color: rgb(30, 139, 0);
+    border: 2px solid darkblue;
+    margin: 0 2rem;
+}
+
+#signUp
+{
+    color: #0065FC;
+}
