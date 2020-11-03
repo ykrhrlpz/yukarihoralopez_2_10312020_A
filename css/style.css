@@ -101,17 +101,7 @@ section input
 
 /* Chips in filters */
 
-.filterIcon
-{
-    background-color:#DEEBFF;
-    padding: 10px;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 30px;
-    vertical-align: middle;
-}
+
 
 .filterChip
 {
@@ -148,3 +138,4 @@ section input
     vertical-align: middle;
     color: #0065FC;
 }
+
