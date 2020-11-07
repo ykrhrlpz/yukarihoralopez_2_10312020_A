@@ -3,8 +3,8 @@ html
     font-family: 'Raleway', sans-serif;
     font-size: 1.4rem;
     color: #131516;
+    font-weight: 400;
 }
-
 /* Nav Bar ----------------------------------------*/
 
 .navBar
@@ -34,7 +34,7 @@ html
 nav a
 {
     text-decoration: none;
-    font-weight: 200;
+    font-weight: 400;
     color: #131516;
 }
 
@@ -50,7 +50,7 @@ nav a
 #signUp
 {
     color: #0065FC;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 nav a:hover
@@ -65,9 +65,12 @@ nav a:hover
 
 /* Search bar Section ------------------------------*/
 
-section h3
+section h3,section > p
 {
-    margin-top: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+
 }
 
 .searchBar
@@ -128,7 +131,7 @@ section input
 
 .filterChip p
 {
-    font-weight: 900;
+    font-weight: 600;
     margin-right: 40px;
 }
 
@@ -161,7 +164,6 @@ section input
 .infoText
 {
     font-size: 14px;
-    font-weight: 200;
     color: #6a6767;
 }
 
@@ -238,10 +240,16 @@ section input
     margin-top: 0;
 }
 
-.card-body p:nth-child(1)
+.card-body p:nth-child(1), .card-body p span
 {
-    font-weight: 900;
+    font-weight: 600;
 }
+
+.card-body p:nth-child(2)
+{
+    font-weight: 200;
+}
+
 
 /* Rating Icon--------------------------------- */
 .rating
