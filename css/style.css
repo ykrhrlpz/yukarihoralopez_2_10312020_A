@@ -67,9 +67,7 @@ nav a:hover
 
 section h3,section > p
 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 20px;
+    margin: 10px 0 10px 50px;
 }
 
 section > p
@@ -84,7 +82,7 @@ section > p
     flex-flow: row wrap;
     width: 400px;
     margin-top: 20px;
-    padding-left: 20px;
+    margin-left: 50px;
     
 }
 
@@ -118,8 +116,6 @@ section input::placeholder
     padding: 15px;
     color: #fff;
     font-size: 20px;
- 
- 
 }
 
 
@@ -133,7 +129,7 @@ section input::placeholder
     justify-content: flex-start;
     align-items: center;
     margin-top: 30px;
-    padding-left: 20px;
+    margin-left: 50px;
 }
 
 .chip
@@ -169,8 +165,16 @@ section input::placeholder
     margin-right: 10px;
     vertical-align: middle; 
     text-align: center;
-    height: 50px;
-  width: 500px;
+    /* height: 50px;
+  width: 500px; */
+}
+
+.infoItem
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 20px;
+
 }
 
 .infoIcon
@@ -184,12 +188,14 @@ section input::placeholder
     color: #0065FC;
     padding: 2px;
     line-height: 20px;
+    margin-left: 50px;
 }
 
 .infoText
 {
-    font-size: 14px;
+    font-size: 16px;
     color: #6a6767;
+    padding-top: 20px;
 }
 
 
