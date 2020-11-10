@@ -222,7 +222,7 @@ section input::placeholder
     margin: 20px 40px 0 50px;
 }
 
-.hotelCards h3
+.accommodationInCity h3
 {
     font-size: 20px;
     margin: 40px 0 10px 25px;
@@ -367,4 +367,14 @@ section input::placeholder
     padding: 10px;
     font-size: 18px;
     text-align: left;
+}
+
+.title
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    margin: 40px 25px 0 25px;
 }
