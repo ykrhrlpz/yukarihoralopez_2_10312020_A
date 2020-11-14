@@ -124,15 +124,39 @@ section input::placeholder
 
 
 /* Chips in filters ---------------------------------*/
+.filterSection
+{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 30px;
+    margin-left: 50px; 
+}
+
+.item
+{
+    flex: 0 0 30px;
+}
+
+.item > p
+{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 12.5px 0 ;
+}
+
+.chipCollection
+{
+    flex: 1 0 500px;
+}
 
 .filterChip
 {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: left;
     align-items: center;
-    margin-top: 30px;
-    margin-left: 50px;
+    /* margin-top: 30px;
+    margin-left: 50px; */
 }
 
 
@@ -140,14 +164,16 @@ section input::placeholder
 {
     display: flex;
     flex-flow: row wrap;
-    height: 52px;
-    line-height: 48px;
+    height: 40px;
+    line-height: 36px;
     font-size: 25px;
     border: 2px solid #d8d8d8;
     border-radius: 30px;
     padding: 0;
     margin: 0;
+    margin-left: 15px;
     box-sizing: border-box;
+
 }
 
 .chip span
@@ -155,8 +181,8 @@ section input::placeholder
     margin: -3px 0 0 -10px;
     padding: 0;
     height: 100%;
-    line-height: 52px;
-    font-size: 27px;
+    line-height: 40px;
+    font-size: 21px;
  
 }
 
@@ -166,7 +192,8 @@ section input::placeholder
     padding: 0 20px 0 10px;
     height: 100%;
     line-height: inherit;
-    font-size: 20px; 
+    font-size: 15px; 
+    font-weight: 600;
 }
 
 .chipIcon
