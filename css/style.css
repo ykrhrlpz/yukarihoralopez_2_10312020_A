@@ -265,7 +265,7 @@ section input::placeholder
 .accommodationInCity h3
 {
     font-size: 20px;
-    margin: 40px 0 10px 25px;
+    margin: 40px 0 10px 50px;
 }
 
 .cardsLeft
@@ -380,7 +380,7 @@ section input::placeholder
     display: flex;
     flex-flow: row wrap;
     background-color: #fff;
-    margin: 20px;
+    margin: 0 20px 20px 20px;
     border-radius: 20px;
     box-sizing: border-box;
 
@@ -416,7 +416,13 @@ section input::placeholder
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    margin: 40px 25px 0 25px;
+    margin: 40px 40px 35px 40px;
+}
+
+.title h3
+{
+    font-size: 20px;
+    margin: 0;
 }
 
 /* Activities in Marseille---------------------------- */
