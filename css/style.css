@@ -5,6 +5,9 @@ html
     color: #131516;
     font-weight: 400;
 }
+
+
+
 /* Nav Bar ----------------------------------------*/
 
 .navBar
@@ -426,45 +429,158 @@ section input::placeholder
 }
 
 /* Activities in Marseille---------------------------- */
-
-.activitity
+.actiCards
 {
-    font-size: 20px;
+    display: grid;
+    grid-template: repeat(6, 2.5rem) / repeat(4, 1fr);
+    grid-gap: 3rem;
+    box-sizing: border-box;
+    height: 30rem;
+    margin-right: 50px;
     margin-left: 50px;
 }
 
-.actiCards
+.activity h3
 {
+    font-size: 20px;
+    margin: 40px 0 30px 50px;
+}
+
+.actiCard img
+{
+    object-fit: cover;
+    width:100%;
+    max-height:100%;
+    height: 90%;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.actiCard
+{
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.actiCard:nth-child(1) img, .actiCard:nth-child(4) img
+{
+    height: 27rem;
+} 
+
+.actiCard:nth-child(2) img
+{
+    height: 16rem;
+} 
+
+.actiCard:nth-child(3) img
+{
+    height: 5rem;
+} 
+
+.actiCard:nth-child(5) img
+{
+    height: 10.5rem;
+} 
+
+.actiCard:nth-child(6) img
+{
+    height: 10.5rem;
+} 
+
+.actiCard p
+{
+    height: 3rem;
+    line-height: 3rem;
+    text-align: left;
+    text-indent: 1rem;
+    background-color: #ffffff;
+    margin: 0;
+    border-radius: 0 0 15px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.actiCard:nth-child(1)
+{
+    grid-column: 1 / 2;
+    grid-row: 1 / 7;
+}
+
+.actiCard:nth-child(2)
+{
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+}
+
+.actiCard:nth-child(3)
+{
+    grid-column: 2 / 3;
+    grid-row: 5 / 7;
+}
+
+.actiCard:nth-child(4)
+{
+    grid-column: 3 / 4;
+    grid-row: 1 / 7;
+}
+
+.actiCard:nth-child(5)
+{
+    grid-column: 4 / 5;
+    grid-row: 1 / 4;
+
+
+}
+
+.actiCard:nth-child(6)
+{
+    grid-column: 4 / 5;
+    grid-row: 4 / 7;
+}
+
+
+/* Footer------------------------------------- */
+
+
+footer
+{
+    background-color: #f2f2f2;
+    padding: 1.5rem;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
-    align-items: flex-end;
+    width: 100vw;
+    margin-top: 3.5rem;
+    font-size: 16px;
+    line-height: 1.4rem;
 }
 
-figure
+footer a
 {
-    display: flex;
-    flex-flow: column;
-    max-width: 220px;
+    text-decoration: none;
+    list-style-type: none;
+    color: #010101;
+    
 }
 
-figure img
+footer ul
 {
-    max-width: 220px;
+    list-style-type: none;
+}
+footer li
+{
+    font-weight: 200;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer li:nth-child(1)
+{
+    font-weight: 600;
+}
+.fMenu1, .fMenu2, .fMenu3
+{
+    padding-right: 150px;
+}
 
