@@ -1,4 +1,4 @@
-html
+ html
 {
     font-family: 'Raleway', sans-serif;
     color: #131516;
@@ -8,31 +8,68 @@ html
 
 
 /* Nav Bar ----------------------------------------*/
-
-.navBar
+ 
+.container
 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    background-color: blueviolet;
-    padding: 0 0.3rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-rows: 3rem;
+    background-color: red;
+    grid-template-areas: 
+    "i a b c";
     margin: -8px -8px 10px -8px;
-    min-height: 3rem;
+}
+
+@media screen and (max-width: 688px) 
+{
+    .container
+    {
+        grid-template: repeat(2, 3rem) / repeat(2, 1fr);
+
+        grid-template-areas: 
+        "i c"
+        "b a";
+    }
+   
+}
+
+.icon
+{
+    /* background-color: pink; */
+    grid-area: i;
+    padding-left: 3.125rem;
+ 
+}
+
+.areaA
+{
+    /* background-color: green; */
+    grid-area: a;
+    margin: auto;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+
+
+.areaB
+{
+    /* background-color: blue; */
+    grid-area: b;
+    margin: auto;
+    height: 3rem;
+    line-height: 3rem;
   
 
 }
 
-.navLogo
+.areaC
 {
-    padding-left: 3.125rem;
-    
-}
-
-.navMenu
-{
-    margin: 0;
+    /* background-color: yellow; */
+    grid-area: c;
+    margin: auto;
+    line-height: 3rem;
+    height: 3rem;
 }
 
 nav a
@@ -40,15 +77,6 @@ nav a
     text-decoration: none;
     font-weight: 400;
     color: #131516;
-}
-
-.navMenuItem
-{
-    display: inline-block;
-    padding: 1.5rem;
-    /* background-color: rgb(30, 139, 0);  */
-    /* border: 2px solid darkblue;  */
-    margin: 0 2rem;
 }
 
 #signUp
@@ -129,6 +157,7 @@ section input::placeholder
 
 
 /* Chips in filters ---------------------------------*/
+
 .filterSection
 {
     display: flex;
@@ -160,8 +189,6 @@ section input::placeholder
     flex-flow: row wrap;
     justify-content: left;
     align-items: center;
-    /* margin-top: 30px;
-    margin-left: 3.125rem; */
 }
 
 .chip
@@ -250,8 +277,9 @@ section input::placeholder
 {
     line-height: 1.25rem;
 }
-
+*/
 /* Hotel list -----------------------------------------*/
+
 
 .hotelCards
 {
@@ -259,7 +287,6 @@ section input::placeholder
     flex-flow: row wrap;
     justify-content: space-around;
     box-sizing: border-box;
-    /* gap: 2.5rem; */
     margin-top: 1.5rem;
     
 }
@@ -269,11 +296,8 @@ section input::placeholder
     box-sizing: border-box;
     background-color:  #F2F2F2;
     border-radius: 1.25rem;
-    /* flex: 2 0 25rem; */
-    /* margin: 1.25rem 2.5rem 0 3.125rem; */
     flex-grow: 2;
     flex-basis: 25rem;
-    /* margin-left: 2.5rem; */
     margin-left: 1.25rem;
     margin-right: 1.25rem;
   
@@ -295,7 +319,6 @@ section input::placeholder
 
 .cardLeft
 {
-    /* flex: 0 0 23.125rem; */
     flex: 0 0 16rem;
     background-color: #fff;
     margin: 1.25rem 0.625rem;
@@ -344,6 +367,8 @@ section input::placeholder
 
 
 /* Rating Icon--------------------------------- */
+
+
 .rating
 {
     margin-bottom: 0;
@@ -386,11 +411,6 @@ section input::placeholder
     background-color:  #F2F2F2;
     border-radius: 1.25rem;
     flex: 1 0 12.5rem;
-    /* margin-top: 1.25rem;
-    margin-right: 3.125rem; */
-    /* flex-grow: 1;
-    flex-basis: 12.5rem; */
-    /* margin-right: 2.5rem; */
     margin-left: 1.25rem;
     margin-right: 1.25rem;
 }
@@ -459,6 +479,7 @@ section input::placeholder
 }
 
 /* Activities in Marseille---------------------------- */
+
 .actiCards
 {
     display: grid;
@@ -484,7 +505,6 @@ section input::placeholder
     height: 90%;
     border-radius: 1rem 1rem 0 0;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-    /* box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2); */
 }
 
 .actiCard
