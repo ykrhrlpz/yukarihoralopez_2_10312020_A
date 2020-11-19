@@ -9,7 +9,7 @@
 
 /* Nav Bar ----------------------------------------*/
  
-.container
+.navBar
 {
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr;
@@ -17,12 +17,12 @@
     background-color: red;
     grid-template-areas: 
     "i a b c";
-    margin: -8px -8px 10px -8px;
+    margin: -8px;
 }
 
 @media screen and (max-width: 688px) 
 {
-    .container
+    .navBar
     {
         grid-template: repeat(2, 3rem) / repeat(2, 1fr);
 
@@ -31,9 +31,16 @@
         "b a";
     }
    
+    .navBar .navMenuItem:hover
+    {
+        border: none;
+        border-bottom: 2px solid #0065FC;
+    }
+    
+
 }
 
-.icon
+.navIcon
 {
     /* background-color: pink; */
     grid-area: i;
