@@ -493,6 +493,14 @@ section input::placeholder
     margin: 0;
 }
 
+@media screen and (max-width: 688px) 
+{
+    .mostPopularInCity
+    {
+        margin-top: 2rem;
+    }
+}
+
 /* Activities in Marseille---------------------------- */
 
 .actiCards
