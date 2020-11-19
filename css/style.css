@@ -160,6 +160,14 @@ section input::placeholder
     font-size: 1.25rem;
 }
 
+@media screen and (max-width: 688px) 
+{
+    .searchBar
+    {
+        margin-left: 1rem;
+    }
+}
+
 
 
 
@@ -284,7 +292,7 @@ section input::placeholder
 {
     line-height: 1.25rem;
 }
-*/
+
 /* Hotel list -----------------------------------------*/
 
 
