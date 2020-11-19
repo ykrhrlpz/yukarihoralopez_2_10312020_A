@@ -339,7 +339,7 @@ section input::placeholder
     margin: 1.25rem 0.625rem;
     margin-top: 1.825rem;
     border-radius: 1.25rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 30px rgb(0, 0, 0,0.1);
 }
 
 .cardImageLeft
@@ -450,7 +450,7 @@ section input::placeholder
     box-sizing: border-box;
     max-width: 20.5rem;
     min-width: 19rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 30px rgb(0, 0, 0,0.1);
 
 }
 
@@ -527,7 +527,7 @@ section input::placeholder
     max-height:100%;
     height: 90%;
     border-radius: 1rem 1rem 0 0;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 30px rgb(0, 0, 0,0.1);
 }
 
 .actiCard
@@ -575,7 +575,7 @@ section input::placeholder
     border-radius: 0 0 1rem 1rem;
     font-size: 1rem;
     font-weight: 600;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 30px rgb(0, 0, 0,0.1);
 }
 
 .actiCard:nth-child(1)
