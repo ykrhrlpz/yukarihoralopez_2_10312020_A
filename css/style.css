@@ -28,7 +28,7 @@
 
         grid-template-areas: 
         "i c"
-        "b a";
+        "a b";
     }
    
     .navBar .navMenuItem:hover
