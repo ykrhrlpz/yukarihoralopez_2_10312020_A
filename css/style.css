@@ -5,6 +5,20 @@
     font-weight: 400;
 }
 
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.navBar,
+.searchSection,
+.hotelCards,
+.activity,
+footer {
+    padding: 0 2rem;
+    max-width: 1280px;
+}
 
 
 /* Nav Bar ----------------------------------------*/
@@ -14,7 +28,6 @@
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr;
     grid-template-rows: 3rem;
-    background-color: red;
     grid-template-areas: 
     "i a b c";
     margin: -8px;
@@ -29,6 +42,7 @@
         grid-template-areas: 
         "i c"
         "a b";
+       
     }
    
     .navBar .navMenuItem:hover
@@ -42,7 +56,6 @@
 
 .navIcon
 {
-    /* background-color: pink; */
     grid-area: i;
     padding-left: 3.125rem;
  
@@ -50,7 +63,6 @@
 
 .areaA
 {
-    /* background-color: green; */
     grid-area: a;
     margin: auto;
     height: 3rem;
@@ -61,18 +73,14 @@
 
 .areaB
 {
-    /* background-color: blue; */
     grid-area: b;
     margin: auto;
     height: 3rem;
     line-height: 3rem;
-  
-
 }
 
 .areaC
 {
-    /* background-color: yellow; */
     grid-area: c;
     margin: auto;
     line-height: 3rem;
@@ -106,13 +114,11 @@ nav a:hover
 
 section h2
 {
-    margin: 0.625rem 0 0.625rem 3.125rem; 
     font-size: 1.25rem;
 }
 
 section > p
 {
-    margin: 0.625rem 0 0.625rem 3.125rem;
     font-weight: 200;
     font-size: 1rem;
 }
@@ -124,8 +130,6 @@ section > p
     flex-flow: row wrap;
     width: 25rem;
     margin-top: 1.25rem;
-    margin-left: 3.125rem;
-    
 }
 
 .searchIcon
@@ -133,7 +137,6 @@ section > p
     background-color: #F2F2F2;
     border-radius: 1rem 0 0 1rem;
     padding: 1rem;
- 
 }
 
 section input
@@ -147,7 +150,6 @@ section input::placeholder
 {
     font-size: 1.25rem;
     color: #131516;
-   
 }
 
 .searchButton
@@ -168,9 +170,6 @@ section input::placeholder
     }
 }
 
-
-
-
 /* Chips in filters ---------------------------------*/
 
 .filterSection
@@ -178,7 +177,6 @@ section input::placeholder
     display: flex;
     flex-flow: row wrap;
     margin-top: 1.875rem;
-    margin-left: 3.125rem; 
 }
 
 .item
@@ -219,7 +217,6 @@ section input::placeholder
     margin: 0;
     margin-left: 1rem;
     box-sizing: border-box;
-
 }
 
 .chip span
@@ -295,15 +292,16 @@ section input::placeholder
 
 /* Hotel list -----------------------------------------*/
 
-
 .hotelCards
 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin-top: 1.5rem;
-    
+    gap: 2rem;
+    /* background-color: green; */
+    max-width: 1280px;
 }
 
 .accommodationInCity
@@ -313,9 +311,6 @@ section input::placeholder
     border-radius: 1.25rem;
     flex-grow: 2;
     flex-basis: 25rem;
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-  
 }
 
 .accommodationInCity h3
@@ -329,7 +324,6 @@ section input::placeholder
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    
 }
 
 .cardLeft
@@ -380,17 +374,21 @@ section input::placeholder
     font-size: 1rem;
 }
 
-
 /* Rating Icon--------------------------------- */
-
 
 .rating
 {
     margin-bottom: 0;
     font-size: .8rem;
-    margin: 0.6rem 0.3rem 0.2rem 0.3rem;
+    margin: 1rem 0.3rem 0.2rem 0.3rem;
 }
 
+.popularRating
+{
+    margin-left: 0;
+    position: absolute;
+    bottom: 10;
+}
 
 .checked 
 {
@@ -405,7 +403,6 @@ section input::placeholder
 .showMore
 {
     margin-bottom: 3.125rem;
-
 }
 
 .showMore a
@@ -415,9 +412,6 @@ section input::placeholder
     margin-left: 3.125rem;
 }
 
-
-
-
 /* Most popular section---------------------------------- */
 
 .mostPopularInCity
@@ -426,8 +420,6 @@ section input::placeholder
     background-color:  #F2F2F2;
     border-radius: 1.25rem;
     flex: 1 0 12.5rem;
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
 }
 
 .cardsRight
@@ -438,7 +430,6 @@ section input::placeholder
     box-sizing: border-box;
     margin: 1.25rem;
 }
-
 
 .cardRight
 {
@@ -451,7 +442,8 @@ section input::placeholder
     max-width: 20.5rem;
     min-width: 19rem;
     box-shadow: 10px 10px 30px rgb(0, 0, 0,0.1);
-
+    height: 10.6rem;
+    position: relative;
 }
 
 .cardImageRight
@@ -459,6 +451,7 @@ section input::placeholder
     flex: 0 0 40%;
     text-align: center;
     margin: 0.3rem;
+    height: 10rem;
 }
 
 .cardImageRight img
@@ -467,6 +460,7 @@ section input::placeholder
     height: 10rem;
     border-radius: 1.25rem 0 0 1.25rem;
     object-fit: cover;
+    height: 10rem;
 }
 
 .cardContentRight
@@ -475,6 +469,7 @@ section input::placeholder
     padding: 0.625rem;
     font-size: 1.125rem;
     text-align: left;
+    height: 10rem;
 }
 
 .title
@@ -493,6 +488,11 @@ section input::placeholder
     margin: 0;
 }
 
+.popularHotelName
+{
+    margin-top: .5rem;
+}
+
 @media screen and (max-width: 688px) 
 {
     .mostPopularInCity
@@ -507,11 +507,11 @@ section input::placeholder
 {
     display: grid;
     grid-template: repeat(6, 2.5rem) / repeat(4, 1fr);
-    grid-gap: 2.5rem;
+    grid-gap: 2rem;
     box-sizing: border-box;
     height: 27.5rem;
-    margin-right: 3.125rem;
-    margin-left: 3.125rem;
+    background-color: pink;
+    max-width: 1280px;
 }
 
 .activity h3
@@ -535,9 +535,7 @@ section input::placeholder
     width: 100%;
     text-align: center;
     box-sizing: border-box;
-    
 }
-
 
 .actiCard:nth-child(1) img, .actiCard:nth-child(4) img
 {
@@ -606,8 +604,6 @@ section input::placeholder
 {
     grid-column: 4 / 5;
     grid-row: 1 / 4;
-
-
 }
 
 .actiCard:nth-child(6)
@@ -616,9 +612,15 @@ section input::placeholder
     grid-row: 4 / 7;
 }
 
+@media screen and (max-width: 688px) 
+{
+    .activity .actiCards
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 /* Footer------------------------------------- */
-
 
 footer
 {
@@ -639,6 +641,7 @@ footer a
     text-decoration: none;
     list-style-type: none;
     color: #010101;
+    font-size: .9rem;
     
 }
 
