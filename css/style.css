@@ -41,7 +41,6 @@ footer
 nav
 {
     width: 100vw;
-    background-color: pink;
 }
 
 .navBar
@@ -53,8 +52,6 @@ nav
     grid-template-areas: 
     "i a b c";
     margin: -8px;
-    background-color: yellow;
-
 }
 
 @media screen and (max-width: 688px) 
@@ -65,8 +62,7 @@ nav
         grid-template: repeat(2, 3rem) / repeat(2, 1fr);
         grid-template-areas: 
         "i c"
-        "a b";
-       
+        "a b"; 
     }
    
     .navBar .navMenuItem:hover
@@ -194,6 +190,7 @@ section input::placeholder
     .searchBar
     {
         margin-left: 1rem;
+        width: 95%;
     }
 }
 
@@ -220,7 +217,7 @@ section input::placeholder
 
 .chipCollection
 {
-    flex: 1 0 31.25rem;
+    flex: 1 0 100%;
 }
 
 .filterChip
@@ -229,6 +226,7 @@ section input::placeholder
     flex-flow: row wrap;
     justify-content: left;
     align-items: center;
+    width: 100%;
 }
 
 .chip
@@ -611,13 +609,18 @@ section input::placeholder
     .navBar,
     .searchSection,
     .hotelCards,
-    .activity,
     footer 
     {
-        padding: 0 2rem;
+        padding: 0;
         max-width: 688px;
         width: 100%;
     }
+
+    .activity
+    {
+        padding: 0 2rem;
+    }
+
     .actiCards
     {
         height: 96rem;
