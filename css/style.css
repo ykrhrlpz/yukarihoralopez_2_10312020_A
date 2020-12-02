@@ -24,18 +24,6 @@ footer
     padding: 0;
 }
 
-@media screen and (max-width: 688px) 
-{
-    .homePage
-    {
-        padding: 0;
-        width: 100%;
-        max-width: 688px;
-    }
-}
-
-
-
 /* Nav Bar ----------------------------------------*/
 
 nav
@@ -53,39 +41,6 @@ nav
     grid-template-areas: 
     "icon areaA areaB areaC";
     /* margin: -8px; */
-  
-
-}
-
-
-    
-
-
-@media screen and (max-width: 688px) 
-{
-    .navBar
-    {
-        width: 100vw;
-        grid-template: repeat(2, 3rem) / repeat(2, 1fr);
-        grid-template-areas: 
-        "icon areaC"
-        "areaA areaB"; 
-    }
-
-    .navIcon img
-    {
-        margin-left: 2rem;
-    }
-
-    
-   
-    .navBar .navMenuItem:hover
-    {
-        border: none;
-        border-bottom: 2px solid #0065FC;
-    }
-    
-
 }
 
 .navIcon
@@ -101,8 +56,6 @@ nav
     height: 3rem;
     line-height: 3rem;
 }
-
-
 
 .areaB
 {
@@ -144,8 +97,6 @@ nav a:hover
 }
 
 /* Search bar Section ------------------------------*/
-
-
 
 section h2
 {
@@ -192,15 +143,6 @@ section input
     font-size: 1.25rem;
 }
 
-@media screen and (max-width: 688px) 
-{
-    .searchBar
-    {
-        margin-left: 1rem;
-        width: 95%;
-    }
-}
-
 /* Chips in filters ---------------------------------*/
 
 .filterSection
@@ -224,7 +166,7 @@ section input
 
 .chipCollection
 {
-    flex: 1 0 100%;
+    flex: 1 0 90%;
 }
 
 .filterChip
@@ -609,10 +551,64 @@ section input
     box-shadow: 10px 10px 30px rgb(0, 0, 0,0.1);
 }
 
+/* Footer------------------------------------- */
 
+footer
+{
+    background-color: #f2f2f2;
+    width: 100vw;
+    margin-top: 3.5rem;
+   
+}
+
+#footerSection
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    font-size: 1.25rem;
+    line-height: 2.4rem;
+    padding-top: 1.2rem;
+    padding-bottom: .6rem;
+}
+
+footer a
+{
+    text-decoration: none;
+    list-style-type: none;
+    color: #010101;
+    font-size: .9rem;
+}
+
+footer ul
+{
+    list-style-type: none;
+}
+footer li
+{
+    font-weight: 200;
+}
+
+footer li:nth-child(1)
+{
+    font-weight: 600;
+}
+.fMenu1, .fMenu2, .fMenu3
+{
+    padding-right: 13.125rem;
+}
+
+/* Mobile ------------------------------------------------- */
 
 @media screen and (max-width: 688px) 
 {
+    .homePage
+    {
+        padding: 0;
+        width: 100%;
+        max-width: 688px;
+    }
+
     .navBar,
     .searchSection,
     .hotelCards,
@@ -623,6 +619,41 @@ section input
         width: 100%;
     }
 
+    /* Nav Bar -----------------------------------*/
+
+    .navBar
+    {
+        width: 100vw;
+        grid-template: repeat(2, 3rem) / repeat(2, 1fr);
+        grid-template-areas: 
+        "icon areaC"
+        "areaA areaB"; 
+    }
+
+    .navIcon img
+    {
+        margin-left: 2rem;
+    }
+
+    
+   
+    .navBar .navMenuItem:hover
+    {
+        border: none;
+        border-bottom: 2px solid #0065FC;
+    }
+
+    /* Search bar Section -------------------------*/
+
+    .searchBar
+    {
+        margin-left: 1rem;
+        width: 95%;
+    }
+
+    /* Activity Section ---------------------------*/
+
+    
     .activity
     {
         padding: 0 2rem;
@@ -666,54 +697,5 @@ section input
     {
         height: 10rem;
     }
-   
-}
 
-/* Footer------------------------------------- */
-
-footer
-{
-    background-color: #f2f2f2;
-    width: 100vw;
-    margin-top: 3.5rem;
-   
 }
-
-#footerSection
-{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    font-size: 1.25rem;
-    line-height: 2.4rem;
-    padding-top: 1.2rem;
-    padding-bottom: .6rem;
-}
-
-
-footer a
-{
-    text-decoration: none;
-    list-style-type: none;
-    color: #010101;
-    font-size: .9rem;
-}
-
-footer ul
-{
-    list-style-type: none;
-}
-footer li
-{
-    font-weight: 200;
-}
-
-footer li:nth-child(1)
-{
-    font-weight: 600;
-}
-.fMenu1, .fMenu2, .fMenu3
-{
-    padding-right: 13.125rem;
-}
-
