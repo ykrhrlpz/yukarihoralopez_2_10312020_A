@@ -256,7 +256,6 @@ section input
 {
     font-size: 1rem;
     color: #6a6767;
-    padding-top: 1.25rem;
 }
 
 .fa-info::before
@@ -557,9 +556,16 @@ footer
     justify-content: flex-start;
     font-size: 1.25rem;
     line-height: 2.4rem;
-    padding-top: 1.2rem;
-    padding-bottom: .6rem;
+    gap: 2rem;
+    padding: 1.2rem 2rem .6rem 2rem; 
 }
+#footerSection
+{
+    padding: 0 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 
 footer a
 {
@@ -573,6 +579,12 @@ footer ul
 {
     list-style-type: none;
 }
+
+footer ul:nth-child(1)
+{
+    padding-left: 0;
+}
+
 footer li
 {
     font-weight: 200;
@@ -582,9 +594,11 @@ footer li:nth-child(1)
 {
     font-weight: 600;
 }
-.fMenu1, .fMenu2, .fMenu3
+
+.fMenu
 {
-    padding-right: 13.125rem;
+    flex: 1 1 100px;
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 420px) 
@@ -696,6 +710,11 @@ footer li:nth-child(1)
         width: auto;
         object-fit: cover;
     }
+
+    .fMenu
+    {
+        flex: 1 1 100%;
+    }
 }
 
 @media screen and (min-width: 421px) and (max-width: 600px) 
@@ -727,9 +746,6 @@ footer li:nth-child(1)
     {
         display: flex;
         flex-flow: column wrap;
-        /* height: auto;
-        gap: 23px;
-        width: 200px; */
     }
 
     .activityColumn
@@ -746,6 +762,16 @@ footer li:nth-child(1)
     {
         height: 12rem;
         object-fit: cover;
+    }
+
+    #footerSection
+    {
+        width: 100vw;
+    }
+
+    .fMenu
+    {
+        flex: 1 1 100%;
     }
 }
 
@@ -800,6 +826,11 @@ footer li:nth-child(1)
     {
         margin: 0;
         padding: 0;
+    }
+
+    #footerSection
+    {
+        width: 100vw;
     }
 }
 
