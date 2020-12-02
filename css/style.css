@@ -537,6 +537,7 @@ section input
     font-size: 1rem;
     font-weight: 600;
     box-shadow: 10px 10px 30px rgb(0, 0, 0,0.1);
+    overflow: hidden;
 }
 
 /* Footer------------------------------------- */
@@ -586,8 +587,6 @@ footer li:nth-child(1)
     padding-right: 13.125rem;
 }
 
-/* Cover all smartphones in portrait mode ------- */
-
 @media screen and (max-width: 420px) 
 {
     .homePage
@@ -622,8 +621,6 @@ footer li:nth-child(1)
     {
         margin-left: 2rem;
     }
-
-    
    
     .navBar .navMenuItem:hover
     {
@@ -637,6 +634,11 @@ footer li:nth-child(1)
     {
         margin-left: 1rem;
         width: 95%;
+    }
+
+    .chip
+    {
+        margin-bottom: 1rem;
     }
 
     /* Most Popular Section ---------------------------*/
@@ -691,23 +693,34 @@ footer li:nth-child(1)
    .acticardSix .actiCardImage img
     {
         height: 10rem;
+        width: auto;
+        object-fit: cover;
     }
 }
 
-
-
-/* most smartphones in landscape mode ----------*/
 @media screen and (min-width: 421px) and (max-width: 600px) 
 {
 
     .navBar
     {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1.5fr;
-        grid-template-rows: 3rem;
+        width: 100vw;
+        grid-template: repeat(2, 3rem) / repeat(2, 1fr);
         grid-template-areas: 
-        "icon areaA areaB areaC";
+        "icon areaC"
+        "areaA areaB"; 
     }
+
+    .navBar .navMenuItem:hover
+    {
+        border: none;
+        border-bottom: 2px solid #0065FC;
+    }
+
+    .chip
+    {
+        margin-bottom: 1rem;
+    }
+
     
     /* Activity Section ------------------------*/
     .actiCards
@@ -725,13 +738,14 @@ footer li:nth-child(1)
     }
 
     .acticardOne .actiCardImage img,
-   .acticardTwo .actiCardImage img,
-   .acticardThree .actiCardImage img,
-   .acticardFour .actiCardImage img,
-   .acticardFive .actiCardImage img,
-   .acticardSix .actiCardImage img
+    .acticardTwo .actiCardImage img,
+    .acticardThree .actiCardImage img,
+    .acticardFour .actiCardImage img,
+    .acticardFive .actiCardImage img,
+    .acticardSix .actiCardImage img
     {
         height: 12rem;
+        object-fit: cover;
     }
 }
 
@@ -739,17 +753,36 @@ footer li:nth-child(1)
 
 @media screen and (min-width:601px) and (max-width: 1023px) 
 {
+    .navBar
+    {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1.5fr;
+        grid-template-rows: 3rem;
+        grid-template-areas: 
+        "icon areaA areaB areaC";
+    }
+
     .homePage
     {
         padding: 0;
     }
 
-    nav,
+    nav .navIcon
+    {
+        margin-left: 2rem;
+    }
+
     .searchSection,
     .activity
     {
         padding: 0 2rem;
     }
+
+    .chip
+    {
+        margin-bottom: 1rem;
+    }
+
 
     .activity
     {
