@@ -467,13 +467,6 @@ section input
     margin-top: .5rem;
 }
 
-@media screen and (max-width: 688px) 
-{
-    .mostPopularInCity
-    {
-        margin-top: 2rem;
-    }
-}
 
 /* Activities in Marseille---------------------------- */
 
@@ -651,6 +644,13 @@ footer li:nth-child(1)
         width: 95%;
     }
 
+    /* Most Popular Section ---------------------------*/
+
+    .mostPopularInCity
+    {
+        margin-top: 2rem;
+    }
+
     /* Activity Section ---------------------------*/
 
     
@@ -697,5 +697,4 @@ footer li:nth-child(1)
     {
         height: 10rem;
     }
-
 }
