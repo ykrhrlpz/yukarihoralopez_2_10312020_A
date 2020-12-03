@@ -118,12 +118,19 @@ section > p
     margin-top: 1.25rem;
 }
 
-.searchIcon
+.mapIcon
 {
     background-color: #F2F2F2;
     border-radius: 1rem 0 0 1rem;
     padding: 1rem;
 }
+
+.fa-search::before
+{
+    display: none;
+}
+
+
 
 section input
 {
@@ -733,6 +740,16 @@ footer li:nth-child(1)
     {
         border: none;
         border-bottom: 2px solid #0065FC;
+    }
+
+    .searchButtonDisplay
+    {
+        display: none;
+    }
+
+    .fa-search::before
+    {
+        display: block;
     }
 
     .chip
