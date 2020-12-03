@@ -662,6 +662,12 @@ footer li:nth-child(1)
         margin-bottom: 1rem;
     }
 
+    .hotelCards
+    {
+        flex-flow: column-reverse wrap;
+    }
+    
+
     /* Most Popular Section ---------------------------*/
 
     .mostPopularInCity
@@ -757,6 +763,12 @@ footer li:nth-child(1)
         margin-bottom: 1rem;
     }
 
+
+    .hotelCards
+    {
+        flex-flow: column-reverse wrap;
+    }
+    
     
     /* Activity Section ------------------------*/
     .actiCards
@@ -826,6 +838,11 @@ footer li:nth-child(1)
         margin-bottom: 1rem;
     }
 
+    .hotelCards
+    {
+        flex-flow: column-reverse wrap;
+    }
+    
 
     .activity
     {
