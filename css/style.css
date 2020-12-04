@@ -732,7 +732,6 @@ footer li:nth-child(1)
 
 @media screen and (min-width: 320px) and (max-width: 600px) 
 {
-
     .navBar
     {
         width: 100vw;
@@ -746,6 +745,22 @@ footer li:nth-child(1)
     {
         border: none;
         border-bottom: 2px solid #0065FC;
+    }
+
+    .searchSection h2, p,
+    .filterSection .item p
+    {
+        margin-left: 2rem;
+    }
+
+    .chipCollection
+    {
+        margin-left: .9rem;
+    }
+
+    .searchBar
+    {
+        margin-left: 1.8rem;
     }
 
     .searchButtonDisplay
@@ -767,6 +782,7 @@ footer li:nth-child(1)
     .hotelCards
     {
         flex-flow: column-reverse wrap;
+        margin: 0;
     }
     
     
