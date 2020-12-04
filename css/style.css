@@ -338,9 +338,20 @@ section input
     text-align: left;
 }
 
-.cardContentLeft p, cardContentRight p
+.cardContentLeft p, .cardContentRight p
 {
     margin: 0.3rem;
+}
+.cardContentLeft p, 
+.cardContentRight p,
+.activity p
+{
+    color:  #131516;
+}
+
+a
+{
+    text-decoration: none;
 }
 
 .cardContentLeft p:nth-child(1), .cardContentLeft p span, .cardContentRight p:nth-child(1), .cardContentRight p span
@@ -666,7 +677,6 @@ footer li:nth-child(1)
     {
         flex-flow: column-reverse wrap;
     }
-    
 
     /* Most Popular Section ---------------------------*/
 
