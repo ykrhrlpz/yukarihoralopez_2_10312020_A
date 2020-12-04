@@ -676,8 +676,15 @@ footer li:nth-child(1)
     .hotelCards
     {
         flex-flow: column-reverse wrap;
+    
     }
 
+    .accommodationInCity
+    {
+        /* background-color: #ffffff; */
+        width: 100%;
+    }
+    
     /* Most Popular Section ---------------------------*/
 
     .mostPopularInCity
