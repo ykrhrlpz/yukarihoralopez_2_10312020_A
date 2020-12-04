@@ -778,6 +778,24 @@ footer li:nth-child(1)
         margin-bottom: 1rem;
     }
 
+    .info
+    {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 10px;
+
+    }
+
+    .infoIcon
+    {
+        margin-left: 2rem;
+    }
+
+    .infoText
+    {
+        flex-basis: 300px;
+    }
+
 
     .hotelCards
     {
@@ -847,6 +865,16 @@ footer li:nth-child(1)
     .activity
     {
         padding: 0 2rem;
+    }
+
+    .infoIcon
+    {
+        margin-left: 0;
+    }
+
+    .infoText
+    {
+        padding-left: 5px;
     }
 
     .chip
