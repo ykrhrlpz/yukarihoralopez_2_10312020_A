@@ -819,6 +819,7 @@ footer li:nth-child(1)
     {
         display: flex;
         flex-flow: column wrap;
+        gap: 26px;
     }
 
     .activityColumn
@@ -902,6 +903,11 @@ footer li:nth-child(1)
     {
         
         margin-bottom: 2rem;
+    }
+
+    .actiCards
+    {
+        gap: 20px;
     }
 
     .activityColumn
