@@ -9,7 +9,14 @@ body
 {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+/* 
+img
+{
+    width: 100%;
+    height: auto;
+} */
 
 .homePage
 {
@@ -22,6 +29,9 @@ nav,
 footer
 {
     padding: 0;
+    min-width: 100%;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 /* Nav Bar ----------------------------------------*/
@@ -291,27 +301,37 @@ section input
     border-radius: 1.25rem;
     flex-grow: 2;
     flex-basis: 25rem;
+    /* padding: 0 3.125rem; */
+    padding: 0 1rem;
+    
 }
 
 .accommodationInCity h3
 {
     font-size: 1.25rem;
-    margin: 2.5rem 0 0.625rem 3.125rem;
+    /* margin-left: .7rem; */
+    margin: 2.5rem 0 0.625rem .8rem;
 }
 
 .cardsLeft
 {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2px;
 }
 
 .cardLeft
 {
-    flex: 0 0 16rem;
+    flex: 0 0 30%;
+    /* flex-basis: 4rem; */
+    min-width: 16rem;
+    height: auto;
     background-color: #fff;
-    margin: 1.25rem 0.625rem;
+    /* margin: 1.25rem 0.625rem; */
     margin-top: 1.825rem;
+    gap: 2rem;
     border-radius: 1.25rem;
     box-shadow: 10px 10px 30px rgb(0, 0, 0,0.1);
 }
@@ -400,7 +420,8 @@ a
 {
     text-decoration: none;
     color: #131516;
-    margin-left: 3.125rem;
+    /* margin-left: 3.125rem; */
+    margin-left: .7rem;
 }
 
 /* Most popular section---------------------------------- */
@@ -561,9 +582,9 @@ a
 
 footer
 {
-    background-color: #f2f2f2;
     width: 100vw;
     margin-top: 3.5rem;
+    background-color: #f2f2f2;
    
 }
 
@@ -575,14 +596,13 @@ footer
     font-size: 1.25rem;
     line-height: 2.4rem;
     gap: 2rem;
-    padding: 1.2rem 2rem .6rem 2rem; 
-}
-#footerSection
-{
+    /* padding: 1.2rem 2rem .6rem 2rem;  */
     padding: 0 2rem;
     max-width: 1280px;
     margin: 0 auto;
+    background-color: #f2f2f2;
 }
+
 
 
 footer a
@@ -665,7 +685,7 @@ footer li:nth-child(1)
     .searchBar
     {
         margin-left: 1rem;
-        width: 95%;
+        width: 90%;
     }
 
     .chip
@@ -683,6 +703,20 @@ footer li:nth-child(1)
     {
         /* background-color: #ffffff; */
         width: 100%;
+        padding: 0 2rem;
+    }
+
+    .cardsLeft
+    {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .cardLeft
+    {
+        flex-basis: 95%;
+        /* margin: 0; */
     }
     
     /* Most Popular Section ---------------------------*/
@@ -690,8 +724,27 @@ footer li:nth-child(1)
     .mostPopularInCity
     {
         margin-top: 2rem;
+        /* padding: 0 2rem; */
+        padding: 0 1rem;
+        width: 100%;
     }
 
+    .cardRight
+    {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .cardsRight
+    {
+        margin: 0 auto;
+    }
+    
+    .title
+    {
+        margin: 2rem 0;
+    }
     /* Activity Section ---------------------------*/
 
     
@@ -703,6 +756,7 @@ footer li:nth-child(1)
     .actiCards
     {
         height: auto;
+        width: 100%;
     }
 
     .activityColumn
@@ -739,6 +793,7 @@ footer li:nth-child(1)
         height: 10rem;
         width: auto;
         object-fit: cover;
+        width: 100%;
     }
 
     .fMenu
@@ -778,6 +833,7 @@ footer li:nth-child(1)
     .searchBar
     {
         margin-left: 1.8rem;
+        margin-bottom: 1rem;
     }
 
     .searchButtonDisplay
@@ -819,7 +875,14 @@ footer li:nth-child(1)
         flex-flow: column-reverse wrap;
         margin: 0;
     }
+
+
     
+    .cardLeft
+    {
+        flex-basis: 95%;
+        /* margin: 0; */
+    }
     
     /* Activity Section ------------------------*/
     .actiCards
@@ -903,6 +966,14 @@ footer li:nth-child(1)
     .hotelCards
     {
         flex-flow: column-reverse wrap;
+    }
+
+
+
+    .cardLeft
+    {
+        flex-basis: 30%;
+        margin: 0 0 2rem 0;
     }
     
 
