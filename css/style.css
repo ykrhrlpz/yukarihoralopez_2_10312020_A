@@ -8,8 +8,7 @@ html
 body
 {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 0;  
 }
 /* 
 img
@@ -23,6 +22,8 @@ img
     padding: 0 2rem;
     max-width: 1280px;
     margin: 0 auto;
+    width: 100%;
+    overflow:hidden;
 }
 
 nav, 
@@ -30,8 +31,9 @@ footer
 {
     padding: 0;
     min-width: 100%;
-    min-width: 100%;
     max-width: 100%;
+    width: 100%;
+    overflow:hidden;
 }
 
 /* Nav Bar ----------------------------------------*/
@@ -910,7 +912,7 @@ footer li:nth-child(1)
 
     #footerSection
     {
-        width: 100vw;
+        width: 90vw;
     }
 
     .fMenu
@@ -1002,7 +1004,7 @@ footer li:nth-child(1)
 
     #footerSection
     {
-        width: 100vw;
+        width: 90vw;
     }
 }
 
