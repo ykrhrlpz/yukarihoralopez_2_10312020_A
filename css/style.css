@@ -717,7 +717,7 @@ footer li:nth-child(1)
 
     .cardLeft
     {
-        flex-basis: 95%;
+        flex-basis: 100%;
         /* margin: 0; */
     }
 
@@ -913,7 +913,7 @@ footer li:nth-child(1)
     
     .cardLeft
     {
-        flex-basis: 95%;
+        flex-basis: 100%;
         /* margin: 0; */
     }
     
