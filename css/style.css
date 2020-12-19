@@ -247,6 +247,12 @@ section input
     color: #0065FC;
 }
 
+
+.chip:hover
+{
+    background-color: #d8d8d8;
+}
+
 /* info text ----------------------------------- */
 
 .infoItem
@@ -717,6 +723,7 @@ footer li:nth-child(1)
     .searchSection
     {
         margin-top: .5rem;
+        margin-bottom: 2rem;
     }
 
     .searchBar
@@ -730,6 +737,13 @@ footer li:nth-child(1)
         width: 11.5rem;
         padding: 0.625rem;
         font-size: 1rem;
+    }
+
+    .searchButton
+    {
+        border-radius: 1rem;
+        position: relative;
+        right: 12;
     }
 
     .searchButtonDisplay
@@ -867,7 +881,7 @@ footer li:nth-child(1)
 
      .mostPopularInCity
     {
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
         padding: 0 2rem;
         width: 100%;
         border-radius: 0;
