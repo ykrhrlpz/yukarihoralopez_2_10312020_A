@@ -720,6 +720,16 @@ footer li:nth-child(1)
         flex-basis: 95%;
         /* margin: 0; */
     }
+
+    .cardContentLeft p
+    {
+        font-size: 1rem;
+    }
+
+    .rating
+    {
+        margin-top: .5rem;
+    }
     
     /* Most Popular Section ---------------------------*/
 
@@ -777,7 +787,7 @@ footer li:nth-child(1)
    {
         height: 4rem;
         line-height: 4rem;
-        font-size: 1.3rem;
+        font-size: 1rem;
    }
 
    .acticardThree, .acticardSix
@@ -792,7 +802,7 @@ footer li:nth-child(1)
    .acticardFive .actiCardImage img,
    .acticardSix .actiCardImage img
     {
-        height: 10rem;
+        height: 8rem;
         width: auto;
         object-fit: cover;
         width: 100%;
@@ -927,7 +937,7 @@ footer li:nth-child(1)
     .acticardFive .actiCardImage img,
     .acticardSix .actiCardImage img
     {
-        height: 12rem;
+        height: 8rem;
         object-fit: cover;
     }
 
