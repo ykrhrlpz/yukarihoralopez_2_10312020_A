@@ -832,6 +832,27 @@ footer li:nth-child(1)
         margin-left: .9rem;
     }
 
+    .chip:nth-child(1)
+    {
+        order: 1;
+    }
+
+    .chip:nth-child(2)
+    {
+        order: 3;
+    }
+
+    .chip:nth-child(3)
+    {
+        order: 2;
+    }
+
+    .chip:nth-child(4)
+    {
+        order: 4;
+    }
+
+
     .searchBar
     {
         margin-left: 1.8rem;
