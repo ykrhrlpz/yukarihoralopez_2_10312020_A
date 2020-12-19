@@ -303,8 +303,7 @@ section input
     border-radius: 1.25rem;
     flex-grow: 2;
     flex-basis: 25rem;
-    /* padding: 0 3.125rem; */
-    padding: 0 1rem;
+    padding: 0 2rem;
     
 }
 
@@ -584,7 +583,11 @@ a
 
 footer
 {
-    width: 100vw;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    overflow:hidden;
+    /* width: 100vw; */
     margin-top: 3.5rem;
     background-color: #f2f2f2;
    
@@ -652,12 +655,20 @@ footer li:nth-child(1)
 
     .navBar,
     .searchSection,
-    .hotelCards,
+    .hotelCards
+    {
+        padding: 0;
+        /* max-width: 688px; */
+        width: 100%;
+    }
+
     footer 
     {
         padding: 0;
-        max-width: 688px;
+        min-width: 100%;
+        max-width: 100%;
         width: 100%;
+        overflow:hidden;
     }
 
     /* Nav Bar -----------------------------------*/
@@ -703,9 +714,15 @@ footer li:nth-child(1)
 
     .accommodationInCity
     {
-        /* background-color: #ffffff; */
+        background-color: #ffffff;
         width: 100%;
         padding: 0 2rem;
+    }
+
+    .accommodationInCity h3
+    {
+        margin-bottom: 0;
+        margin-left: 0;
     }
 
     .cardsLeft
@@ -718,7 +735,7 @@ footer li:nth-child(1)
     .cardLeft
     {
         flex-basis: 100%;
-        /* margin: 0; */
+        margin-top: 2rem;
     }
 
     .cardContentLeft p
@@ -730,15 +747,33 @@ footer li:nth-child(1)
     {
         margin-top: .5rem;
     }
+
+    .showMore, 
+    .showMore a
+    {
+        margin-left: 0;
+    }
+
+    .showMore
+    {
+        margin-top: 2rem;
+    }
+
+    .showMore a 
+    {
+        font-weight: 600;
+        margin-top: .5rem;
+    }
     
     /* Most Popular Section ---------------------------*/
 
     .mostPopularInCity
     {
         margin-top: 2rem;
-        /* padding: 0 2rem; */
-        padding: 0 1rem;
+        padding: 0 2rem;
         width: 100%;
+        border-radius: 0;
+        padding-bottom: 2rem;
     }
 
     .cardRight
@@ -751,6 +786,7 @@ footer li:nth-child(1)
     .cardsRight
     {
         margin: 0 auto;
+        gap: 2rem;
     }
     
     .title
@@ -763,6 +799,12 @@ footer li:nth-child(1)
     .activity
     {
         padding: 0 2rem;
+    }
+
+    .activity h3
+    {
+        margin-bottom: 2rem;
+        font-size: 20px;
     }
 
     .actiCards
@@ -909,6 +951,10 @@ footer li:nth-child(1)
         margin: 0;
     }
 
+    .cardRight
+    {
+        margin: 0;
+    }
 
     
     .cardLeft
@@ -922,7 +968,7 @@ footer li:nth-child(1)
     {
         display: flex;
         flex-flow: column wrap;
-        gap: 26px;
+
     }
 
     .activityColumn
@@ -1001,6 +1047,20 @@ footer li:nth-child(1)
         flex-flow: column-reverse wrap;
     }
 
+    
+    .cardsRight
+    {
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0 2rem 2rem 2rem;
+        gap: 2.5rem;
+    }
+
+    .cardRight
+    {
+        margin: 0;
+    }
+
 
 
     .cardLeft
@@ -1031,6 +1091,10 @@ footer li:nth-child(1)
     {
         margin: 0;
         padding: 0;
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+        overflow:hidden;
     }
 
     #footerSection
