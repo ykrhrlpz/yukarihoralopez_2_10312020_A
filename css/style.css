@@ -10,12 +10,6 @@ body
     margin: 0;
     padding: 0;  
 }
-/* 
-img
-{
-    width: 100%;
-    height: auto;
-} */
 
 .homePage
 {
@@ -41,7 +35,6 @@ footer
 nav
 {
     width: 100vw;
-    /* background-color: pink; */
 }
 
 .navBar
@@ -52,37 +45,46 @@ nav
     grid-template-rows: 3rem;
     grid-template-areas: 
     "icon areaA areaB areaC";
-    /* margin: -8px; */
+    height: auto;
+    min-height: 5rem;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+ul
+{
+    list-style: none;
 }
 
 .navIcon
 {
     grid-area: icon;
- 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .areaA
 {
     grid-area: areaA;
     margin: auto;
-    height: 3rem;
-    line-height: 3rem;
+    height: 5rem;
+    line-height: 5rem;
 }
 
 .areaB
 {
     grid-area: areaB;
     margin: auto;
-    height: 3rem;
-    line-height: 3rem;
+    height: 5rem;
+    line-height: 5rem;
 }
 
 .areaC
 {
     grid-area: areaC;
     margin: auto;
-    line-height: 3rem;
-    height: 3rem;
+    line-height: 5rem;
+    height: 5rem;
 }
 
 nav a
@@ -95,7 +97,7 @@ nav a
 #signUp
 {
     color: #0065FC;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 nav a:hover
@@ -113,14 +115,14 @@ nav a:hover
 section h2
 {
     font-size: 1.25rem;
+    margin-top: 0;
 }
 
 section > p
 {
     font-weight: 200;
-    font-size: 1rem;
+    font-size: rem;
 }
-
 
 .searchBar
 {
@@ -142,12 +144,10 @@ section > p
     display: none;
 }
 
-
-
 section input
 {
     border: .3px solid #e6e6e6;
-    width: 12.5rem;
+    width: 15rem;
     padding: 0.625rem;
     font-size: 1rem;
 }
@@ -219,7 +219,6 @@ section input
     height: 100%;
     line-height: 2.5rem;
     font-size: 1.375rem;
- 
 }
 
 .chip p
@@ -282,17 +281,15 @@ section input
     line-height: 1.25rem;
 }
 
-/* Hotel list -----------------------------------------*/
+/* Hotel Section -----------------------------------------*/
 
 .hotelCards
 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    /* box-sizing: border-box; */
     margin-top: 1.5rem;
     gap: 2rem;
-    /* background-color: green; */
     max-width: 1280px;
 }
 
@@ -304,13 +301,11 @@ section input
     flex-grow: 2;
     flex-basis: 25rem;
     padding: 0 2rem;
-    
 }
 
 .accommodationInCity h3
 {
     font-size: 1.25rem;
-    /* margin-left: .7rem; */
     margin: 2.5rem 0 0.625rem .8rem;
 }
 
@@ -318,21 +313,18 @@ section input
 {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-between;
     width: 100%;
-    gap: 2px;
+    gap: 1.5rem;
 }
 
 .cardLeft
 {
     flex: 0 0 30%;
-    /* flex-basis: 4rem; */
-    min-width: 16rem;
+    min-width: 15rem;
     height: auto;
-    background-color: #fff;
-    /* margin: 1.25rem 0.625rem; */
+    background-color: #ffffff;
     margin-top: 1.825rem;
-    gap: 2rem;
     border-radius: 1.25rem;
     box-shadow: 10px 10px 30px rgb(0, 0, 0,0.1);
 }
@@ -363,6 +355,7 @@ section input
 {
     margin: 0.3rem;
 }
+
 .cardContentLeft p, 
 .cardContentRight p,
 .activity p
@@ -375,12 +368,16 @@ a
     text-decoration: none;
 }
 
-.cardContentLeft p:nth-child(1), .cardContentLeft p span, .cardContentRight p:nth-child(1), .cardContentRight p span
+.cardContentLeft p:nth-child(1),
+.cardContentLeft p span,
+.cardContentRight p:nth-child(1),
+.cardContentRight p span
 {
     font-weight: 600;
 }
 
-.cardContentLeft p:nth-child(2), .cardContentRight p:nth-child(2)
+.cardContentLeft p:nth-child(2),
+.cardContentRight p:nth-child(2)
 {
     font-weight: 200;
     font-size: 1rem;
@@ -421,7 +418,6 @@ a
 {
     text-decoration: none;
     color: #131516;
-    /* margin-left: 3.125rem; */
     margin-left: .7rem;
 }
 
@@ -506,18 +502,22 @@ a
     margin-top: .5rem;
 }
 
+/* Activity Section ------------------------*/
 
-/* Activities in Marseille---------------------------- */
+.activity
+{
+    margin-top: 3rem;
+}
 
 .actiCards
 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    /* background-color: pink; */
     max-width: 1280px;
     gap: 10px;
     height: auto;
+    padding-bottom: 2rem;
 }
 
 .activityColumn
@@ -588,9 +588,8 @@ footer
     width: 100%;
     overflow:hidden;
     /* width: 100vw; */
-    margin-top: 3.5rem;
-    background-color: #f2f2f2;
-   
+    margin-top: 1.5rem;
+    background-color: #f2f2f2; 
 }
 
 #footerSection
@@ -607,8 +606,6 @@ footer
     margin: 0 auto;
     background-color: #f2f2f2;
 }
-
-
 
 footer a
 {
@@ -644,13 +641,13 @@ footer li:nth-child(1)
     font-size: 1rem;
 }
 
-@media screen and (max-width: 420px) 
+
+@media screen and (max-width: 600px) 
 {
     .homePage
     {
         padding: 0;
         width: 100%;
-        max-width: 688px;
     }
 
     .navBar,
@@ -658,8 +655,12 @@ footer li:nth-child(1)
     .hotelCards
     {
         padding: 0;
-        /* max-width: 688px; */
         width: 100%;
+    }
+
+    .searchSection
+    {
+        margin-top: 2rem;
     }
 
     footer 
@@ -668,10 +669,10 @@ footer li:nth-child(1)
         min-width: 100%;
         max-width: 100%;
         width: 100%;
-        overflow:hidden;
+        overflow:　hidden;
     }
-
-    /* Nav Bar -----------------------------------*/
+    
+    /* Nav Bar ----------------------------------------*/
 
     .navBar
     {
@@ -682,201 +683,75 @@ footer li:nth-child(1)
         "areaA areaB"; 
     }
 
+    .navIcon
+    {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .areaA, .areaB, .areaC
+    {
+        height: 3rem;
+        line-height: 3rem;
+    }
+    
     .navIcon img
     {
         margin-left: 2rem;
     }
-   
-    .navBar .navMenuItem:hover
+
+    .navMenuItem:hover
     {
-        border: none;
+        border-top: none;
         border-bottom: 2px solid #0065FC;
     }
 
-    /* Search bar Section -------------------------*/
-
-    .searchBar
-    {
-        margin-left: 1rem;
-        width: 90%;
-    }
-
-    .chip
-    {
-        margin-bottom: 1rem;
-    }
-
-    .hotelCards
-    {
-        flex-flow: column-reverse wrap;
-    
-    }
-
-    .accommodationInCity
-    {
-        background-color: #ffffff;
-        width: 100%;
-        padding: 0 2rem;
-    }
-
-    .accommodationInCity h3
-    {
-        margin-bottom: 0;
-        margin-left: 0;
-    }
-
-    .cardsLeft
-    {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    .cardLeft
-    {
-        flex-basis: 100%;
-        margin-top: 2rem;
-    }
-
-    .cardContentLeft p
-    {
-        font-size: 1rem;
-    }
-
-    .rating
-    {
-        margin-top: .5rem;
-    }
-
-    .showMore, 
-    .showMore a
-    {
-        margin-left: 0;
-    }
-
-    .showMore
-    {
-        margin-top: 2rem;
-    }
-
-    .showMore a 
-    {
-        font-weight: 600;
-        margin-top: .5rem;
-    }
-    
-    /* Most Popular Section ---------------------------*/
-
-    .mostPopularInCity
-    {
-        margin-top: 2rem;
-        padding: 0 2rem;
-        width: 100%;
-        border-radius: 0;
-        padding-bottom: 2rem;
-    }
-
-    .cardRight
-    {
-        width: 100%;
-        margin: 0;
-        margin-bottom: 2rem;
-    }
-
-    .cardsRight
-    {
-        margin: 0 auto;
-        gap: 2rem;
-    }
-    
-    .title
-    {
-        margin: 2rem 0;
-    }
-    /* Activity Section ---------------------------*/
-
-    
-    .activity
-    {
-        padding: 0 2rem;
-    }
-
-    .activity h3
-    {
-        margin-bottom: 2rem;
-        font-size: 20px;
-    }
-
-    .actiCards
-    {
-        height: auto;
-        width: 100%;
-    }
-
-    .activityColumn
-    {
-        width: 100%;
-    }
-
-   .actiCard
-   {
-        margin-bottom: 2rem;
-        max-width: 688px;
-        width: 100%;
-   }
-
-   .actiCard p
-   {
-        height: 4rem;
-        line-height: 4rem;
-        font-size: 1rem;
-   }
-
-   .acticardThree, .acticardSix
-   {
-       margin-top: 0;
-   }
-
-   .acticardOne .actiCardImage img,
-   .acticardTwo .actiCardImage img,
-   .acticardThree .actiCardImage img,
-   .acticardFour .actiCardImage img,
-   .acticardFive .actiCardImage img,
-   .acticardSix .actiCardImage img
-    {
-        height: 8rem;
-        width: auto;
-        object-fit: cover;
-        width: 100%;
-    }
-
-    .fMenu
-    {
-        flex: 1 1 100%;
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 600px) 
-{
-    .navBar
-    {
-        width: 100vw;
-        grid-template: repeat(2, 3rem) / repeat(2, 1fr);
-        grid-template-areas: 
-        "icon areaC"
-        "areaA areaB"; 
-    }
-
-    .navBar .navMenuItem:hover
-    {
-        border: none;
-        border-bottom: 2px solid #0065FC;
-    }
+    /* Search bar Section ------------------------------*/
 
     .searchSection h2, p,
     .filterSection .item p
     {
         margin-left: 2rem;
+    }
+    
+    .searchSection
+    {
+        margin-top: .5rem;
+    }
+
+    .searchBar
+    {
+        margin: 2rem 0 1rem 1.8rem;
+        width: 90%;
+    }
+
+    section input
+    {
+        width: 11.5rem;
+        padding: 0.625rem;
+        font-size: 1rem;
+    }
+
+    .searchButtonDisplay
+    {
+        display: none;
+    }
+
+    .fa-search::before
+    {
+        display: block;
+    }
+
+    /* Chips in filters ---------------------------------*/
+
+    .filterSection
+    {
+        margin-top: 1.1rem;
+    }
+
+    .chip
+    {
+        margin-bottom: 1rem;
     }
 
     .chipCollection
@@ -904,34 +779,13 @@ footer li:nth-child(1)
         order: 4;
     }
 
-
-    .searchBar
-    {
-        margin-left: 1.8rem;
-        margin-bottom: 1rem;
-    }
-
-    .searchButtonDisplay
-    {
-        display: none;
-    }
-
-    .fa-search::before
-    {
-        display: block;
-    }
-
-    .chip
-    {
-        margin-bottom: 1rem;
-    }
+    /* info text ----------------------------------- */
 
     .info
     {
         display: flex;
         flex-flow: row wrap;
         gap: 10px;
-
     }
 
     .infoIcon
@@ -941,9 +795,10 @@ footer li:nth-child(1)
 
     .infoText
     {
-        flex-basis: 300px;
+        flex-basis: 250px;
     }
 
+    /* Hotel Section -----------------------------------------*/
 
     .hotelCards
     {
@@ -951,24 +806,115 @@ footer li:nth-child(1)
         margin: 0;
     }
 
-    .cardRight
+    .accommodationInCity
     {
+        background-color: #ffffff;
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .accommodationInCity h3
+    {
+        margin-top: .5rem;
+        margin-bottom: 2rem;
+        margin-left: 0;
+    }
+
+    .cardsLeft
+    {
+        width: 100%;
+        padding: 0;
         margin: 0;
     }
 
-    
     .cardLeft
     {
         flex-basis: 100%;
-        /* margin: 0; */
+        margin-top: .2rem;
+    }
+
+    .cardContentLeft p
+    {
+        font-size: 1rem;
+    }
+
+    /* Rating Icon--------------------------------- */
+
+    .rating
+    {
+        margin-top: .5rem;
+    }
+
+    .showMore, 
+    .showMore a
+    {
+        margin-left: 0;
+    }
+
+    .showMore
+    {
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    .showMore a 
+    {
+        font-weight: 600;
+        margin-top: .5rem;
+    }
+
+    /* Most popular section---------------------------------- */
+
+     .mostPopularInCity
+    {
+        margin-top: 2rem;
+        padding: 0 2rem;
+        width: 100%;
+        border-radius: 0;
+        padding-bottom: 2rem;
+    }
+
+    .cardRight
+    {
+        min-width: 19rem;
+        max-width: 100%;
+        margin: 0;
+        margin-bottom: .2rem;
+    }
+
+    .cardsRight
+    {
+        margin: 0 auto;
+        gap: 2rem;
     }
     
+    .title
+    {
+        margin: 2rem 0;
+    }
+
     /* Activity Section ------------------------*/
+
+    .activity
+    {
+        padding: 0 2rem;
+        margin-top: 3rem;
+    }
+
+    .activity h3
+    {
+        margin-bottom: 2rem;
+        font-size: 20px;
+    }
+
     .actiCards
     {
         display: flex;
         flex-flow: column wrap;
-
+        height: auto;
+        width: 100%;
+        gap: 2px;
+        padding-bottom: 1rem;
     }
 
     .activityColumn
@@ -976,20 +922,55 @@ footer li:nth-child(1)
         width: 100%;
     }
 
-    .acticardOne .actiCardImage img,
-    .acticardTwo .actiCardImage img,
-    .acticardThree .actiCardImage img,
-    .acticardFour .actiCardImage img,
-    .acticardFive .actiCardImage img,
-    .acticardSix .actiCardImage img
+   .actiCard
+   {
+        margin-bottom: 2rem;
+        max-width: 688px;
+        width: 100%;
+   }
+
+   .actiCard p
+   {
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 1rem;
+   }
+
+   .acticardThree,
+   .acticardSix
+   {
+       margin-top: 0;
+   }
+
+   .acticardOne .actiCardImage img,
+   .acticardTwo .actiCardImage img,
+   .acticardThree .actiCardImage img,
+   .acticardFour .actiCardImage img,
+   .acticardFive .actiCardImage img,
+   .acticardSix .actiCardImage img
     {
         height: 8rem;
+        width: auto;
         object-fit: cover;
+        width: 100%;
+    }
+
+    /* Footer------------------------------------- */
+
+    .fMenu
+    {
+        flex: 1 1 100%;
+    }
+
+    footer 
+    {
+        margin-top: 0;
     }
 
     #footerSection
     {
         width: 90vw;
+        gap: 0;
     }
 
     .fMenu
@@ -998,10 +979,15 @@ footer li:nth-child(1)
     }
 }
 
-
-
 @media screen and (min-width:601px) and (max-width: 1024px) 
 {
+    .homePage
+    {
+        padding: 0;
+    }
+
+    /* Nav Bar ----------------------------------------*/
+
     .navBar
     {
         display: grid;
@@ -1010,22 +996,21 @@ footer li:nth-child(1)
         grid-template-areas: 
         "icon areaA areaB areaC";
     }
-
-    .homePage
-    {
-        padding: 0;
-    }
-
+    
     nav .navIcon
     {
         margin-left: 2rem;
     }
+
+    /* Search bar Section ------------------------------*/
 
     .searchSection,
     .activity
     {
         padding: 0 2rem;
     }
+
+    /* info text ----------------------------------- */
 
     .infoIcon
     {
@@ -1037,16 +1022,41 @@ footer li:nth-child(1)
         padding-left: 5px;
     }
 
+    /* Chips in filters ---------------------------------*/
+
     .chip
     {
         margin-bottom: 1rem;
     }
+
+    /* Hotel Section -----------------------------------------*/
 
     .hotelCards
     {
         flex-flow: column-reverse wrap;
     }
 
+    .accommodationInCity
+    {
+        background-color: #ffffff;
+    }
+
+    .accommodationInCity h3
+    {
+        margin-top: 1.5rem;
+    }
+
+    .showMore
+    {
+        margin-top: 2.5rem;
+    }
+
+    /* Most popular section---------------------------------- */
+
+    .mostPopularInCity
+    {
+        border-radius: 0;
+    }
     
     .cardsRight
     {
@@ -1061,19 +1071,22 @@ footer li:nth-child(1)
         margin: 0;
     }
 
-
-
     .cardLeft
     {
-        flex-basis: 30%;
-        margin: 0 0 2rem 0;
+        flex-basis: 48%;
     }
-    
+
+    /* Activity Section ------------------------*/
 
     .activity
     {
-        
         margin-bottom: 2rem;
+        margin-top: 0;
+    }
+
+    .activity h3
+    {
+        margin-top: 0;
     }
 
     .actiCards
@@ -1086,6 +1099,8 @@ footer li:nth-child(1)
         width: 48%;
         min-width: 100px;
     }
+
+    /* Footer------------------------------------- */
 
     footer
     {
@@ -1100,6 +1115,7 @@ footer li:nth-child(1)
     #footerSection
     {
         width: 90vw;
+        gap: 7rem;
     }
 }
 
