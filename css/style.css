@@ -107,7 +107,7 @@ nav a:hover
 
 .navMenuItem:hover
 {
-    border-top: 2px solid #0065FC;
+    border-top: 3px solid #0065FC;
 }
 
 /* Search bar Section ------------------------------*/
@@ -683,10 +683,13 @@ footer li:nth-child(1)
     .navBar
     {
         width: 100vw;
-        grid-template: repeat(2, 3rem) / repeat(2, 1fr);
+        grid-template: 4rem 5.5rem / repeat(2, 1fr);
         grid-template-areas: 
         "icon areaC"
         "areaA areaB"; 
+        margin-bottom: 0;
+        margin-top: 1.5rem;
+        font-size: 1.1rem;
     }
 
     .navIcon
@@ -695,10 +698,26 @@ footer li:nth-child(1)
         padding-bottom: 0;
     }
 
-    .areaA, .areaB, .areaC
+    .navIcon, .areaC
+    {
+        padding: 10px 0;
+    }
+
+    .areaC
     {
         height: 3rem;
         line-height: 3rem;
+        text-align: right;
+        margin: 0 2rem 0 0;
+    }
+    .areaA, 
+    .areaB
+    {
+        height: auto;
+        line-height: 3.5rem;
+        width: 100%;
+        border-bottom: 3px solid #F2F2F2;
+        text-align: center;
     }
     
     .navIcon img
@@ -706,10 +725,11 @@ footer li:nth-child(1)
         margin-left: 2rem;
     }
 
-    .navMenuItem:hover
+    .areaA:hover,
+    .areaB:hover
     {
         border-top: none;
-        border-bottom: 2px solid #0065FC;
+        border-bottom: 3px solid #0065FC;
     }
 
     /* Search bar Section ------------------------------*/
@@ -1123,7 +1143,7 @@ footer li:nth-child(1)
         min-width: 100%;
         max-width: 100%;
         width: 100%;
-        overflow:hidden;
+        overflow: hidden;
     }
 
     #footerSection
