@@ -17,7 +17,7 @@ body
     max-width: 1280px;
     margin: 0 auto;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 nav, 
@@ -27,7 +27,7 @@ footer
     min-width: 100%;
     max-width: 100%;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 /* Nav Bar ----------------------------------------*/
@@ -593,7 +593,6 @@ footer
     max-width: 100%;
     width: 100%;
     overflow:hidden;
-    /* width: 100vw; */
     margin-top: 1.5rem;
     background-color: #f2f2f2; 
 }
@@ -606,7 +605,6 @@ footer
     font-size: 1.25rem;
     line-height: 2.4rem;
     gap: 2rem;
-    /* padding: 1.2rem 2rem .6rem 2rem;  */
     padding: 0 2rem;
     max-width: 1280px;
     margin: 0 auto;
@@ -901,7 +899,6 @@ footer li:nth-child(1)
 
      .mostPopularInCity
     {
-        /* margin-top: 2rem; */
         padding: 0 2rem;
         width: 100%;
         border-radius: 0;
